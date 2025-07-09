@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AutomateX | Agencia de Automatización de Procesos Inteligentes</title>
+  <meta name="description" content="AutomateX es una agencia líder en automatización de procesos empresariales. Optimiza tu negocio con soluciones inteligentes y personalizadas de RPA, integración y análisis de datos." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://automatex.com/" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="navbar" role="banner">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Inicio AutomateX">AutomateX</a>
+      <nav role="navigation" aria-label="Menú principal">
+        <ul class="nav-list">
+          <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#por-que" class="nav-link">Por qué elegirnos</a></li>
+          <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main">
+    <section class="hero" aria-label="Presentación principal">
+      <div class="container">
+        <h1>Automatización de procesos inteligentes para empresas eficientes</h1>
+        <p>En <strong>AutomateX</strong>, transformamos tu negocio mediante soluciones de automatización personalizadas para aumentar productividad y reducir costos.</p>
+        <a href="#contacto" class="btn-cta" role="button">Solicita una consultoría gratuita</a>
+      </div>
+    </section>
+
+    <section id="servicios" class="servicios" aria-labelledby="servicios-title">
+      <div class="container">
+        <h2 id="servicios-title">Nuestros Servicios</h2>
+        <article class="servicio" aria-labelledby="servicio1-title">
+          <h3 id="servicio1-title">Automatización con RPA</h3>
+          <p>Implementamos robots de software para automatizar tareas repetitivas y procesos complejos, permitiendo que tu equipo se enfoque en lo que realmente importa.</p>
+        </article>
+        <article class="servicio" aria-labelledby="servicio2-title">
+          <h3 id="servicio2-title">Integración de Sistemas</h3>
+          <p>Conectamos tus plataformas y aplicaciones para un flujo de trabajo ágil y sincronizado que optimiza la gestión y reduce errores manuales.</p>
+        </article>
+        <article class="servicio" aria-labelledby="servicio3-title">
+          <h3 id="servicio3-title">Dashboards Inteligentes</h3>
+          <p>Desarrollamos paneles personalizados con indicadores en tiempo real que te ayudan a tomar decisiones basadas en datos precisos y actualizados.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="por-que" class="porque" aria-labelledby="porque-title">
+      <div class="container">
+        <h2 id="porque-title">¿Por qué elegir AutomateX?</h2>
+        <ul>
+          <li>✔️ Expertos certificados en RPA y automatización con más de 5 años de experiencia.</li>
+          <li>✔️ Soluciones personalizadas adaptadas a las necesidades únicas de tu negocio.</li>
+          <li>✔️ Acompañamiento integral desde la consultoría hasta la implementación y soporte.</li>
+          <li>✔️ Metodologías ágiles que garantizan rapidez y calidad en cada proyecto.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="testimonios" class="testimonios" aria-labelledby="testimonios-title">
+      <div class="container">
+        <h2 id="testimonios-title">Testimonios de Clientes</h2>
+        <blockquote>
+          <p>“AutomateX revolucionó nuestra forma de trabajar. Gracias a su experiencia en automatización, hemos reducido tiempos de producción en un 30%.”</p>
+          <footer>— Laura Gómez, CEO de LogiCorp</footer>
+        </blockquote>
+        <blockquote>
+          <p>“El equipo fue muy profesional y cercano. La integración entre sistemas fue perfecta y el soporte postventa nos ha acompañado en cada paso.”</p>
+          <footer>— Marcos Díaz, Director de Operaciones en Fintech Solutions</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="contacto" class="section-contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Cuéntanos tu idea y cómo podemos ayudarte a automatizar tus procesos.</p>
+
+            <form id="contactForm" novalidate>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono" pattern="[0-9+\-\s]{7,15}" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mensaje">Tu idea</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Explícanos brevemente tu idea" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Enviar</button>
+            </form>
+
+            <div id="formMessage" class="form-message"></div>
+        </div>
+    </section>
+  </main>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+            <p>&copy; 2025 Tu Agencia de Automatización</p>
+            </div>
+            <div class="footer-center">
+            <p>Contacto: <a href="mailto:contacto@tuagencia.com">contacto@tuagencia.com</a></p>
+            </div>
+            <div class="footer-right">
+            <a href="aviso-legal.html">Aviso legal</a>
+            <a href="privacidad.html">Privacidad</a>
+            <a href="cookies.html">Cookies</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cookie-banner" id="cookie-banner">
+        <p>
+            Utilizamos cookies para mejorar tu experiencia y analizar el tráfico.
+            <a href="/cookies.html">Saber más</a>
+        </p>
+        <button id="accept-cookies">Aceptar</button>
+    </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,404 @@
+/* Fuentes y Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #111;
+  background: #fff;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+a {
+  color: #007aff;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Navegación */
+.navbar {
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #005ecb;
+  outline: none;
+}
+
+/* Hero */
+.hero {
+  background-color: #f5f5f7;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: #444;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-cta {
+  display: inline-block;
+  background-color: #007aff;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover,
+.btn-cta:focus {
+  background-color: #005ecb;
+  outline: none;
+}
+
+/* Secciones */
+.servicios,
+.porque,
+.testimonios,
+.footer {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.servicios h2,
+.porque h2,
+.testimonios h2,
+.footer h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Servicios */
+.servicio {
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  border-left: 4px solid #007aff;
+  padding-left: 1rem;
+}
+
+.servicio h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.servicio p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Porque */
+.porque ul {
+  list-style: none;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.porque li {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.porque li::before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Testimonios */
+.testimonios blockquote {
+  font-style: italic;
+  color: #555;
+  max-width: 700px;
+  margin: 2rem auto;
+  border-left: 4px solid #007aff;
+  padding-left: 1rem;
+}
+
+.testimonios footer {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #111;
+  color: #ccc;
+  padding: 30px 20px;
+  font-size: 0.95rem;
+  border-top: 1px solid #333;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+  text-align: center;
+}
+
+.footer a {
+  color: #aaa;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-center a {
+  font-weight: 500;
+  color: #0071e3;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    text-align: center;
+  }
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .servicios {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .servicio {
+    max-width: 30%;
+  }
+
+  .porque ul {
+    padding-left: 0;
+  }
+}
+
+.fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-contacto {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  color: #111;
+  text-align: center;
+}
+
+.section-contacto h2 {
+  font-size: 2.4rem;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+.section-contacto p {
+  margin-bottom: 2em;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1.5em;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3em;
+  font-weight: 500;
+  color: #333;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #0071e3;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.btn-submit {
+  background: #0071e3;
+  color: white;
+  border: none;
+  padding: 14px 25px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.btn-submit:hover {
+  background: #005bb5;
+}
+
+.form-message {
+  margin-top: 1em;
+  font-weight: 600;
+  color: green;
+  text-align: center;
+}
+
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #1f1f1f;
+  color: #fff;
+  padding: 1rem;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cookie-banner p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.cookie-banner a {
+  color: #4dabf7;
+  text-decoration: underline;
+}
+
+.cookie-banner button {
+  background: #4dabf7;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cookie-banner button:hover {
+  background: #339af0;
+}
+
